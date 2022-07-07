@@ -18,40 +18,51 @@ module.exports = {
       '/notes/': [
         {
           title: 'JavaScript',
-          children: [['javascript.md', '笔记']]
+          children: [['javascript/', '笔记']]
         },
         {
           title: 'Vue',
-          children: [['vue.md', '笔记']]
+          children: [
+            // 会自动匹配 docs/notes/vue/index.md 或 README.md
+            ['vue/', '笔记'],
+            ['vue/memo.md', 'test']
+          ]
         },
         {
           title: 'CSS',
-          children: [['css.md', '笔记']]
+          children: [['css/', '笔记']]
         },
         {
           title: '网络相关',
-          children: [['network.md', '笔记']]
+          children: [['network/', '笔记']]
         },
         {
           title: '前端工具链',
-          children: [['toolchain.md', '笔记']]
+          children: [['toolchain/', '笔记']]
         },
         {
           title: 'React',
-          children: [['react.md', '笔记']]
+          children: [['react/', '笔记']]
         },
         {
           title: '后端相关',
-          children: [['backend.md', '笔记']]
+          children: [['backend/', '笔记']]
         },
         {
           title: '软技能',
-          children: [['soft-skill.md', '笔记']]
+          children: [['soft-skill/', '笔记']]
         }
       ]
     },
     activeHeaderLinks: false // 禁止实时更新 url 后面的 #hash
   },
 
-  plugins: ['@vuepress/back-to-top']
+  plugins: ['@vuepress/back-to-top'],
+
+  locales:{
+    '/': {
+      lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+      title: 'xiaohj 的个人空间'
+    },
+  }
 }
