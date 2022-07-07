@@ -18,38 +18,40 @@ module.exports = {
       '/notes/': [
         {
           title: 'JavaScript',
-          children: [['javascript', '笔记']]
+          children: [['javascript.md', '笔记']]
         },
         {
           title: 'Vue',
-          children: [['vue', '笔记']]
+          children: [['vue.md', '笔记']]
         },
         {
           title: 'CSS',
-          children: [['css', '笔记']]
+          children: [['css.md', '笔记']]
         },
         {
           title: '网络相关',
-          children: [['network', '笔记']]
+          children: [['network.md', '笔记']]
         },
         {
           title: '前端工具链',
-          children: [['toolchain', '笔记']]
+          children: [['toolchain.md', '笔记']]
         },
         {
           title: 'React',
-          children: [['react', '笔记']]
+          children: [['react.md', '笔记']]
         },
         {
           title: '后端相关',
-          children: [['backend', '笔记']]
+          children: [['backend.md', '笔记']]
         },
         {
           title: '软技能',
-          children: [['soft-skill', '笔记']]
+          children: [['soft-skill.md', '笔记']]
         }
       ]
     },
     activeHeaderLinks: false // 禁止实时更新 url 后面的 #hash
-  }
+  },
+
+  plugins: ['@vuepress/back-to-top']
 }
