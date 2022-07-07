@@ -1,0 +1,14 @@
+{
+  "name": "xiaohj-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xiaohj <719887163@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .dev-temp",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
