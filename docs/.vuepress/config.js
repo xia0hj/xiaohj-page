@@ -50,7 +50,7 @@ module.exports = {
         },
         {
           title: '软技能',
-          children: [['soft-skill/', '笔记']]
+          children: [['career/', '笔记']]
         }
       ]
     },
@@ -64,5 +64,7 @@ module.exports = {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
       title: 'xiaohj 的个人空间'
     },
-  }
+  },
+
+  dest: 'dist'
 }

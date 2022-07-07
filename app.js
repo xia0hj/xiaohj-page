@@ -4,7 +4,7 @@ const port = 9876
 
 const app = express()
 
-app.use(express.static('./docs/.vuepress/dist'))
+app.use(express.static('dist'))
 
 module.exports = app.listen(port, function (err) {
   if (err) {

@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vuepress dev docs --temp .dev-temp",
     "build": "vuepress build docs",
-    "app": "node app.js"
+    "app": "node app.js",
+    "export": "node scripts/export-notes.js"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",
