@@ -3,7 +3,7 @@
 module.exports = {
   title: 'xiaohj 的个人空间',
   description: 'Just playing around',
-
+  base: '/xiaohj-page/',
   themeConfig: {
     logo: 'avatars.jpg',
     // 右上角的导航
