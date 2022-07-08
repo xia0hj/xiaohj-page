@@ -27,7 +27,6 @@ function generateMdPack(){
     const content = fs.readFileSync(md, 'utf8')
     writer.write('\n', 'utf8')
     writer.write(content, 'utf8')
-    // writer.write('\n---\n', 'utf8')
     console.log(`成功写入文件 ${md}`)
   })
   writer.end()

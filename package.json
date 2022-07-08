@@ -8,10 +8,11 @@
     "dev": "vuepress dev docs --temp .dev-temp",
     "build": "vuepress build docs",
     "app": "node app.js",
-    "export": "node scripts/export-notes.js"
+    "export": "node scripts/export-notes.js && npx doctoc dist/自己整理的前端笔记.md"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",
+    "doctoc": "^2.2.0",
     "vuepress": "^1.9.7"
   }
 }
