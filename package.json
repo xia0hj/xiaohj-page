@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev docs --temp .dev-temp",
-    "build": "vuepress build docs",
+    "build": "vuepress build docs --no-cache",
     "app": "node app.js",
     "export": "node scripts/export-notes.js && npx doctoc dist/自己整理的前端笔记.md"
   },
